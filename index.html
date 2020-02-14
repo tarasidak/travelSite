@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Farvater</title>
+</head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="upperHeader">
+                    <div class="headerIcons">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./img/burgerMenu.png" alt="burger_menu_icon"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/heart.png" alt="heart_icon"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/card.png" alt="credit_card_icon"> <span class="vertical">Бронируйте онлайн 24/7</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="logoDiv">
+                        <a href="#" class="logo"><img src="./img/logotype.png" alt="logo"></a>
+                    </div>
+                    <div class="account">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="./img/phone.png" alt="phone_icon"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="./img/earth.png" alt="earth_icon"><span class="vertical"> Укр</span><sup><img src="./img/down.png" class="btnDown"></sup></a>
+                            </li>
+                            <li id="dropDownMenu">
+                                <a href="#"><img class="accountPhoto" src="./img/account.png" alt="account_photo"><span class="vertical"> Мария-Магдалена</span><sup><img src="./img/down.png" class="btnDown"></sup></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="dropMenu" class="dropMenu">
+                        <ul>
+                            <li><a href="#">Кабінет користувача<a></li>
+                            <li><a href="#">Особисті дані</a></li>
+                            <li><a href="#">Змінити пароль</a></li>
+                            <li><a href="#">Замовлені тури <span class="toRight">3</span></a></li>
+                            <li><a href="#">Обрані <span class="toRight">6</span></a></li>
+                            <li><a href="#">Бонусні бали <span class="toRight">192</span></a></li>
+                            <li><a href="#">Поштова розсилка</a></li>
+                            <li><a href="#">Вийти з акаунту</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#">Кабінет користувача</a></li>
+                        <li><a href="#">Особисті дані</a></li>
+                        <li><a href="#">Замовлені тури</a></li>
+                        <li><a href="#">Обране</a></li>
+                        <li><a href="#">Бонусні бали</a></li>
+                        <li><a href="#">Поштова розсилка</a></li>
+                    </ul>
+                </nav>
+                <div class="menuWrapperForMobile">
+                    <div class="menuLimiter">
+                        <menu class="menu">
+                            <li class="menuItem"><a href="#">Кабінет&nbspкористувача</a></li>
+                            <li class="menuItem"><a href="#">Особисті&nbspдані</a></li>
+                            <li class="menuItem"><a href="#">Замовлені&nbspтури</a></li>
+                            <li class="menuItem"><a href="#">Обране</a></li>
+                            <li class="menuItem"><a href="#">Бонусні&nbspбали</a></li>
+                            <li class="menuItem"><a href="#">Поштова&nbspрозсилка</a></li>
+                        </menu>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <hr class="menuLine" style="width: 80%; margin-left: 10%; margin-right: 10%;">
+        <div class="orderTours">
+            <h1>Замовлені тури</h1>
+            <ul class="tours">
+                <li>Оплачені</li>
+                <li>Не оплачені</li>
+                <li>Скасовані</li>
+            </ul>
+        </div>
+        <hr style="margin: 0;">
+        <div class="mainWrapper">
+            <aside>
+                <div class="asideInfo">
+                    <h3>Очікується оплата 2 турів</h3>
+                    <div class="firstBlock">
+                        <p>№ 0150-09112001 від 24 грудня 2017</p>
+                        <hr>
+                        <h4>Sefikbey City (Ex. Sinbad Hotel)</h4>
+                        <div class="stars">
+                            <p>Турция, Кемер, Бельбиди</p>
+                            <p><span class="starsColor" style="color: #FFB500;">&#9733;&#9733;&#9733;&#9733;</span>&#9734;</p>
+                        </div>
+                        <div class="touristInfo">
+                            <p><img src="./img/userIcon.png"> 2 туриста, на 7 ночей</p>
+                            <p><img src="./img/plane.png"> Виліт 24.12</p>
+                        </div>
+                        <div class="priceInfo">
+                            <p class="price">35 073 грн <span class="usa">($1 299)</span></p>
+                            <p class="orangePrice">Очікується оплата</p>
+                        </div>
+                        <p>Квитки і віза з'являться за 2 дні до вильоту</p>
+                    </div>
+                    <div class="secondBlock">
+                        <p>№ 0150-09112001 від 24 грудня 2017</p>
+                        <hr>
+                        <h4>Tropical Paradise Flower in the San...</h4>
+                        <div class="stars">
+                            <p>Турция, Кемер, Бельбиди</p>
+                            <p><span class="starsColor" style="color:#FFB500;">&#9733;&#9733;&#9733;&#9733;</span>&#9734;</p>
+                        </div>
+                        <div class="touristInfo">
+                            <p><img src="./img/userIcon.png"> 2 туриста, на 7 ночей</p>
+                            <p><img src="./img/plane.png"> Виліт 24.12</p>
+                        </div>
+                        <div class="priceInfo">
+                            <p class="price">35 073 грн <span class="usa">($1 299)</span></p>
+                            <p class="orangePrice">Очікується оплата</p>
+                        </div>
+                        <p>Квитки і віза з'являться за 2 дні до вильоту</p>
+                    </div>
+                </div>
+            </aside>
+            <main>
+                <div class="mainInfo">
+                    <p>№ 0150-09112001 від 24 грудня 2017</p>
+                    <hr>
+                    <h2>Tropical Paradise Flower in the Sand</h2>
+                    <div class="hotelStars">
+                        <p>Турция, Кемер, Бельбиди</p>
+                        <p class="stars"><span class="starsColor" style="color: #FFB500;">&#9733;&#9733;&#9733;&#9733;</span>&#9734;</p>
+                    </div>
+                    <div class="hotelPhoto">
+                        <img src="./img/hotel.png" class="hotelPhotoImg" alt="hotel_photo">
+                        <ul>
+                            <li><img src="./img/jetReady.png"> Перелёт включён в тур</li>
+                            <li><img src="./img/plane.png"> Вылет 24.12</li>
+                            <li><img src="./img/moon.png"> На 2 ночи</li>
+                            <li><img src="./img/userIcon.png"> 2 туриста</li>
+                            <li><img src="./img/bedIcon.png"> Двуспальная кровать (DBL)</li>
+                            <li><img src="./img/eat.png"> Всё включено (AI)</li>
+                        </ul>
+                        <p>35 073 грн <span class="usa">($1 299)</span><span class="orangePrice"> Очікується оплата</span></p>
+                    </div>
+                    <div class="btnS">
+                        <button class="onlineBtn"><a href="https://easypay.ua/ua">Оплатити онлайн</a></button>
+                        <button class="downloadBtn"><a href="./order/order.txt" download>Завантажити рахунок-фактуру</a></button>
+                        <button class="resetBtn">Анулювати замовлення</button>
+                    </div>
+                    <hr>
+                    <ul class="payDocs">
+                        <li><a>Платежі</a></li>
+                        <li><a>Документи</a></li>
+                    </ul>
+                    <hr width="97%">
+                    <div class="orderDate">
+                        <h4>Номер та дата замовлення</h4>
+                        <p>№ 0150-09112001 від 24 грудня 2017</p>
+                    </div>
+                    <hr width="97%">
+                    <div class="orderBill">
+                        <h4>Рахунок-фактура</h4>
+                        <div class="actualBill">
+                            <p>№473 від 06.10.2017 — актуальный</p>
+                            <div class="btnDiv">
+                                <button><a href="./order/order.txt" download>Завантажити</a></button>
+                                <button><a href="#">Вислати на пошту</a></button>
+                            </div>
+                        </div>
+                        <div class="oldBills">
+                            <p>№474 від 05.10.2017</p>
+                            <p>№475 від 03.10.2017</p>
+                        </div>
+                        <div class="btnDivForMobile">
+                            <button><a href="./order/order.txt" download>Завантажити</a></button>
+                            <button><a href="#">Вислати на пошту</a></button>
+                        </div>
+                        <hr width="97%">
+                        <div class="someInfo">
+                            <h4>Сплатити до</h4>
+                            <p>25 грудня 2017</p>
+                        </div>
+                        <hr width="97%">
+                        <div class="someInfo">
+                            <h4>Спосіб оплати</h4>
+                            <p>Безготівковій розрахунок</p>
+                        </div>
+                        <hr width="97%">
+                        <div class="someInfo">
+                            <h4>Вартість туру</h4>
+                            <p>35 073 грн ($1 299)</p>
+                        </div>
+                        <hr width="97%">
+                        <div class="someInfo">
+                            <h4>Some heading</h4>
+                            <p>Some text</p>
+                        </div>
+                        <hr width="97%">
+                        <div class="someInfo">
+                            <h4>Промокод</h4>
+                            <p>Активований: BLACK-FRIDAY (1000 грн)</p>
+                        </div>
+                        <hr width="97%">
+                        <div class="someInfo">
+                            <h4>Сума до оплати</h4>
+                            <p>35 073 грн</p>
+                        </div>
+                        <hr width="97%">
+                        <div class="someInfo">
+                            <h4>Коштів внесено</h4>
+                            <p>0 грн</p>
+                        </div>
+                        <hr width="97%">
+                        <div class="payBtns">
+                            <button class="onlineBtn"><a href="https://easypay.ua/ua">Оплатити онлайн</a></button>
+                            <button class="downloadBtn"><a href="./order/order.txt" download>Завантажити рахунок-фактуру</a></button>
+                            <p>Сума до оплати: 35 073 грн</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <div class="footerForDesktop">
+                <div class="footerLogo">
+                    <img src="./img/logoFooter.png">
+                </div>
+                <div class="firstFooterBlock">
+                    <ul>
+                        <li class="heading">Почему мы</li>
+                        <li>Миссия и ценности</li>
+                        <li>Наши преймущества</li>
+                        <li>Безопасность</li>
+                    </ul>
+                    <ul>
+                        <li class="heading">Покупателю</li>
+                        <li>Как забронировать тур?</li>
+                        <li>Способы оплаты</li>
+                        <li>Советы туристам</li>
+                        <li>Вопросы и ответы</li>
+                    </ul>
+                    <ul>
+                        <li class="heading">FARVATER</li>
+                        <li>О компании</li>
+                        <li>Блог</li>
+                        <li>Наша команда</li>
+                        <li>Контакты</li>
+                    </ul>
+                    <ul>
+                        <li class="heading">АКЦИИ</li>
+                        <li>Горящие туры</li>
+                        <li>Рекомендуемые</li>
+                        <li>Ранее бронирование</li>
+                    </ul>
+                    <ul>
+                        <li class="heading">Мы в соцсетях</li>
+                        <div class="line">
+                            <li><a href="https://www.facebook.com/" target="_blank"><img src="./img/facebookIcon.png"></a></li>
+                            <li><a href="https://www.instagram.com/" target="_blank"><img src="./img/instagramIcon.png"></a></li>
+                            <li><a href="https://web.telegram.org/" target="_blank"><img src="./img/telegramIcon.png"></a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank"><img src="./img/youtubeIcon.png"></a></li>
+                        </div>
+                    </ul>
+                    <ul>
+                        <li class="heading">Способы оплаты</li>
+                        <li><a href="https://www.mastercard.ua/" target="_blank"><img src="./img/masterCardIcon.png"></a></li>
+                        <li><a href="https://www.visa.com.ua/"  target="_blank"><img src="./img/visaIcon.png"></a></li>
+                        <li><a href="https://www.privat24.ua/"  target="_blank"><img src="./img/privat24.png"></a></li>
+                        <li><a href="https://bitcoin.org/uk/"  target="_blank"><img src="./img/bitcoinIcon.png"></a></li>
+                    </ul>
+                </div>
+                <div class="secondFooterBlock">
+                    <ul>
+                        <li class="heading">Европа</li>
+                        <li>Австрия</li>
+                        <li>Азербайджан</li>
+                        <li>Албания</li>
+                        <li>Андорра</li>
+                        <li>Юельгия</li>
+                    </ul>
+                    <ul>
+                        <li class="heading">Ближний Восток</li>
+                        <li>Израиль</li>
+                        <li>Иордания</li>
+                        <li>Катар</li>
+                        <li>Ливан</li>
+                        <li>ОАЭ</li>
+                    </ul>
+                    <ul>
+                        <li class="heading">Азия</li>
+                        <li>Бали (Индонезия)</li>
+                        <li>Вьетнам</li>
+                        <li>Гонконг (Китай)</li>
+                        <li>Индия</li>
+                        <li>Индонезия</li>
+                    </ul>
+                    <ul>
+                        <li class="heading">Африка</li>
+                        <li>Египет</li>
+                        <li>Кабо-Верде</li>
+                        <li>Кения</li>
+                        <li>Маврикий</li>
+                        <li>Мадагаскар</li>
+                    </ul>
+                    <ul>
+                        <li class="heading">Австралия</li>
+                        <li>Австралия</li>
+                        <li>Африка</li>
+                        <li>Фиджи</li>
+                        <li>Французская полинезия(Франция)</li>
+                    </ul>
+                    <ul>
+                        <li class="heading">Северная Америка</li>
+                        <li>Канада</li>
+                        <li>США</li>
+                    </ul>
+                </div>     
+                <p class="allCountries"><a href="#">Все страны <span>&rsaquo;</span></a></p>
+                <div class="etcFooter">
+                    <p>*Оплата труда производится в гривнах</p>
+                    <p class="etc">&copy; Фарватер Тревел, 2020</p>
+                </div>
+            </div>
+            <div class="footerForMobile">
+                <div class="footerLogo">
+                    <img src="./img/logoFooter.png">
+                </div>
+                <div class="ourLinks">
+                    <p><a href="#"><span class="linkText">Почему мы</span><span class="rightArrow">&rsaquo;</span></a></p>
+                    <p><a href="#"><span class="linkText">Помощь покупателю</span><span class="rightArrow">&rsaquo;</span></a></p>
+                    <p><a href="#"><span class="linkText">FARVATER</span><span class="rightArrow">&rsaquo;</span></a></p>
+                    <p><a href="#"><span class="linkText">Акции</span><span class="rightArrow">&rsaquo;</span></a></p>
+                </div>
+                <div class="paymentMethod">
+                    <span>Спосбоы оплаты:</span>
+                    <a href="#"><img src="./img/masterCardIcon.png" alt="master_card"></a>
+                    <a href="#"><img src="./img/visaIcon.png" alt="visa_card"></a>
+                    <a href="#"><img src="./img/privat24.png" alt="privat_bank"></a>
+                    <a href="#"><img src="./img/bitcoinIcon.png" alt="bitcoin_icon"></a>
+                    <p>*Оплата труда производится в гривнах</p>
+                </div>
+                <div class="socialMedia">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="./img/facebookIcon.png"></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><img src="./img/instagramIcon.png"></a></li>
+                        <li><a href="https://web.telegram.org/" target="_blank"><img src="./img/telegramIcon.png"></a></li>
+                        <li><a href="https://www.youtube.com/" target="_blank"><img src="./img/youtubeIcon.png"></a></li>
+                    </ul>
+                </div>
+                <p class="phoneNumber"><a href="tel:+380442903108">+380 (44) 290-31-08</a></p>
+                <p class="etc">&copy;2020 Farvater Travel</p>
+            </div>
+        </footer>
+        <script src="./main.js"></script>
+    </body>
+</html>

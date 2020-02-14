@@ -1,0 +1,938 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.usa{
+    color: #9E9E9E;
+}
+
+.orangePrice{
+    color: #FFB500;
+}
+
+.btnDivForMobile,
+.footerForMobile,
+.menuWrapperForMobile{
+    display: none;
+}
+
+/*HEADER STYLES*/
+
+.container{
+    margin-top: 20px;
+}
+
+.upperHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerIcons ul,
+.account ul {
+    list-style: none;
+}
+
+.headerIcons li,
+.account li {
+    display: inline-block;
+}
+
+.headerIcons li img, span{
+    vertical-align: middle;
+}
+.account li img, span{
+    vertical-align: middle;
+}
+
+.headerIcons li a,
+.account li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.headerIcons li:not(:first-child),
+.account li:not(:first-child){
+    margin-left: 20px;
+}
+
+.headerIcons li img,
+.account li img{
+    width: 18px;
+}
+
+.headerIcons li .btnDown,
+.account li .btnDown{
+    margin-left: 0;
+    width: 8px;
+}
+
+.account li img.accountPhoto{
+    width: 35px;
+    border-radius: 50%;
+}
+
+.headerIcons ul li span,
+.account ul li span{
+    height: inherit;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+/*SECOND HEADER STYLES*/
+
+.navigation{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30px;
+}
+
+.navigation ul{
+    padding-left: 0;
+}
+
+.navigation ul li{
+    display: inline-block;
+}
+
+.navigation ul li a{
+    color: rgba(51, 51, 51, 0.56);
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 15px;
+    cursor: pointer;
+    padding-bottom: 23px; 
+}
+
+.navigation ul li a:hover{
+    color: rgb(0, 0, 0);
+    border-bottom:2px solid rgb(0, 0, 0);
+}
+
+.dropMenu{
+    display: none;
+    float: right;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dropMenu ul{
+    width:300px;
+    height: 320px;
+    border:1px solid #9E9E9E;
+    border-radius: 5px;
+    padding-left: 0;
+    margin: 0;
+    background: #fff;
+    margin-top: 60px;
+}
+  
+.dropMenu ul li{
+    list-style:none;
+    border-bottom: 1px solid #9E9E9E;
+    padding:10px;
+}
+
+.dropMenu ul li:last-child{
+    border: none;
+}
+  
+.dropMenu ul li a{
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.dropMenu ul li:last-child a{
+    color: #00AEEF;
+}
+  
+.dropMenu ul li .toRight{
+    float:right;
+    background:#00AEEF;
+    color:white;
+    border-radius: 3px;
+    padding: 0 2px;
+}
+
+/*ORDER TOURS STYLES*/
+
+.orderTours{
+    margin-left: 10%;
+}
+
+.orderTours h1{
+    color: #464646;
+    font-weight: normal;
+}
+
+.orderTours ul{
+    padding-left: 0;
+}
+
+.orderTours ul li{
+    display: inline-block;
+    border: 1px solid #00AEEF;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #00AEEF;
+    font-weight: bold;
+}
+
+.orderTours ul li:hover{
+    background: #00AEEF;
+    color: #fff;
+    font-weight: bold;
+}
+
+.orderTours ul li:first-child{
+    border-radius: 50px 0 0 50px;
+    border-right: none;
+    margin-right: -5px;
+    
+}
+.orderTours ul li:last-child{
+    border-radius: 0 50px 50px 0;
+    border-left: none;
+    margin-left: -5px;
+}
+
+/*MAIN PART OF SITE*/
+/*ASIDE BLOCK STYLES*/
+
+.mainWrapper{
+    display: flex;
+    flex-direction: row;
+    background-color: #F5F5F5;
+    padding-bottom: 50px;
+}
+
+aside{
+    width: 35%;
+    margin-left: 10%;
+}
+
+.asideInfo h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.asideInfo .firstBlock,
+.asideInfo .secondBlock{
+    width: 90%;
+    border: 1px solid rgba(0, 0, 0, 0.56);
+    background: #fff;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.51);
+    box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.51);
+}
+
+.asideInfo .firstBlock:hover,
+.asideInfo .secondBlock:hover{
+    border: 1px solid #00AEEF;
+}
+
+.asideInfo .firstBlock > div,
+.asideInfo .secondBlock > div{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.asideInfo .firstBlock > p,
+.asideInfo .secondBlock > p{
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.56);
+    font-weight: normal;
+}
+
+.asideInfo .firstBlock h4,
+.asideInfo .secondBlock h4{
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.asideInfo .firstBlock .stars,
+.asideInfo .secondBlock .stars{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #9E9E9E;
+}
+
+.asideInfo .firstBlock .touristInfo,
+.asideInfo .secondBlock .touristInfo{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.asideInfo .firstBlock .touristInfo > p,
+.asideInfo .secondBlock .touristInfo > p{
+    margin-top: 0; 
+}
+
+.asideInfo .firstBlock .priceInfo .price,
+.asideInfo .secondBlock .priceInfo .price{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.asideInfo .firstBlock .priceInfo .orangePrice,
+.asideInfo .secondBlock .priceInfo .orangePrice{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+/*MAIN BLOCK STYLES*/
+
+main{
+    margin-right: 10%;
+    width: 55%;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.56);
+    border-radius: 5px;
+    margin-top: 52px;
+    -webkit-box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.51);
+    -moz-box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.51);
+    box-shadow: 4px 2px 5px 0px rgba(0,0,0,0.51);
+}
+
+main p{
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.56);
+    font-weight: normal;
+}
+
+.mainInfo h2{
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    color: #464646;
+    margin-bottom: 0;
+}
+
+.mainInfo .hotelStars p {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #9E9E9E;
+}
+
+.mainInfo .hotelPhoto{
+    margin-left: 10px;
+}
+
+.mainInfo .hotelPhoto ul{
+    margin-top: 0;
+    list-style: none;
+    margin-top: -10px;
+}
+.mainInfo .hotelPhoto ul li{
+    line-height: 1.8;
+    font-weight: normal;
+    font-size: 14px;
+    color: #363636;  
+}
+
+.mainInfo .hotelPhoto img, ul{
+    display: inline-block;
+}
+
+.mainInfo .hotelPhoto p{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+.mainInfo .hotelPhoto p .orangePrice{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.mainInfo .btnS,
+.mainInfo .payBtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.mainInfo .btnS > button,
+.mainInfo .payBtns > button{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: Roboto;
+}
+
+.mainInfo .btnS .onlineBtn a,
+.mainInfo .payBtns .onlineBtn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.mainInfo .btnS .downloadBtn a,
+.mainInfo .payBtns .downloadBtn a{
+    text-decoration: none;
+    color:#00AEEF;
+}
+.mainInfo .btnS .onlineBtn,
+.mainInfo .payBtns .onlineBtn{
+    background: linear-gradient(270deg, #00D7F8 0%, #00AEEF 100%);
+    color: #fff;
+    border: none;
+}
+
+.mainInfo .btnS .downloadBtn,
+.mainInfo .payBtns .downloadBtn{
+    background: #fff;
+    border: 1px solid #00AEEF;
+}
+
+.mainInfo .btnS .resetBtn{
+    background: #fff;
+    color: rgba(0, 0, 0, 0.56);
+    border: 1px solid rgba(0, 0, 0, 0.56);
+}
+
+.mainInfo .payDocs{
+    padding-left: 0;
+    margin: 10px 10px 0 10px;
+}
+
+.mainInfo .payDocs li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.mainInfo .payDocs li a{
+    color: rgba(51, 51, 51, 0.56);
+    padding-bottom: 8px; 
+    cursor: pointer;
+}
+
+.mainInfo .payDocs li a:hover{
+    border-bottom: 2px solid #000000;
+    color: #000000;
+}
+
+.mainInfo .orderDate h4{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.mainInfo .orderDate p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.orderBill h4{
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 0;
+}
+
+.actualBill{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.actualBill p{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.actualBill .btnDiv>button{
+    background:#fff;
+    border: none;
+    font-family: Roboto;
+} 
+
+.actualBill .btnDiv>button a{
+    text-decoration:none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #00AEEF;
+}
+
+.orderBill .oldBills p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.56);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.mainInfo .someInfo h4{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    margin-bottom: 0;
+}
+
+.mainInfo .someInfo p{
+    margin-top: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.mainInfo .payBtns{
+    margin-bottom: 20px;
+}
+
+.mainInfo .payBtns p{
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #333333;
+}
+
+/*FOOTER BLOCK STYLES*/
+
+footer .footerLogo{
+    margin-left: 10%;
+    margin-top: 30px;
+}
+
+footer .firstFooterBlock,
+footer .secondFooterBlock{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer .firstFooterBlock ul,
+footer .secondFooterBlock ul{
+    padding: 0;
+    width: 150px;
+}
+
+footer .firstFooterBlock ul li,
+footer .secondFooterBlock ul li{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    color: #333333; 
+    list-style: none;
+}
+
+footer .firstFooterBlock ul .heading,
+footer .secondFooterBlock ul .heading{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.line img{
+    width: 20px;
+    height: 20px;
+}
+
+footer .allCountries a{
+    color: #00AEEF;
+    text-decoration: none;
+    margin-left: 10%;
+}
+
+footer .allCountries span{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer .etcFooter{
+    margin-left: 10%;
+}
+
+footer .etcFooter p{
+    color: #9E9E9E;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+footer .etcFooter p:last-child{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+/*STYLES FOR SMARTPHONES*/
+
+@media (max-width:320px){
+    .container .headerIcons ul li:not(:first-child),
+    .container .account ul li:not(:last-child),
+    .container .account ul li:last-child span,
+    .container .account ul li:last-child .btnDown,
+    aside .asideInfo h3,
+    main .mainInfo .hotelPhoto .hotelPhotoImg,
+    .mainInfo .orderBill .actualBill .btnDiv,
+    .footerForDesktop,
+    .navigation,
+    .menuLine{
+        display: none;
+    }
+
+    .container .headerIcons ul,
+    .container .account ul{
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    .upperHeader .logoDiv img{
+        width: 180px;
+        margin-left: 0;
+        margin-left: -40px;
+    }
+
+    .container .account ul li:last-child{
+        width: 18px;
+        height: 18px;
+        margin-left: -50px;
+    }
+
+    .orderTours{
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: center;
+    }
+
+    .orderTours h1{
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .orderTours ul li{
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .orderTours ul li:first-child {
+        margin-right: -6px;
+    }
+
+    .mainWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        padding-top: 25px;
+        margin: 0 0;
+    }
+
+    .menuWrapperForMobile{
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    .menuWrapperForMobile .menu{
+        display: flex;
+        padding-left: 0;
+    }
+
+    .menu li{
+        list-style: none;
+        margin-right: 20px;
+    }
+
+    .menu li a{
+        font-size: 18px;
+        color: #333333;
+        text-decoration: none;
+        
+    }
+
+    .menu li a:hover{
+        padding-bottom: 10px;
+        border-bottom: 2px solid #00AEEF;
+    }
+
+    .menu .menuItem:last-child{
+        margin-right: 0;
+    }
+
+    .menuLimiter{
+        width: 320px;
+        padding: 0 10px;
+        overflow-x:scroll;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 20px;
+        margin-bottom: -20px;
+    }
+
+    aside, 
+    main{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    main{
+        margin-top: 0;
+    }
+
+    aside .asideInfo .firstBlock,
+    aside .asideInfo .secondBlock,
+    main {
+        width: 288px;
+    }
+
+    aside .asideInfo .firstBlock .touristInfo > p,
+    aside .asideInfo .firstBlock .priceInfo > p,
+    aside .asideInfo .secondBlock .touristInfo > p,
+    aside .asideInfo .secondBlock .priceInfo > p,
+    main .mainInfo .hotelStars > p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    aside .asideInfo .firstBlock .priceInfo .price,
+    aside .asideInfo .firstBlock .priceInfo .orangePrice,
+    aside .asideInfo .secondBlock .priceInfo .price,
+    aside .asideInfo .secondBlock .priceInfo .orangePrice,
+    main .mainInfo .hotelPhoto p,
+    main .mainInfo .hotelPhoto p .orangePrice,
+    .mainInfo .orderDate h4,
+    .mainInfo .orderDate p,
+    .mainInfo .orderBill h4,
+    .mainInfo .orderBill .actualBill > p,
+    .mainInfo .orderBill .oldBills > p,
+    .footerForMobile .paymentMethod span,
+    .footerForMobile .paymentMethod p{
+        margin-top: 0;
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    main .mainInfo .hotelStars p:last-child,
+    main .mainInfo .hotelPhoto p .orangePrice{
+        float: right;
+        margin-right: 5%;
+    }
+
+    main .mainInfo .hotelPhoto ul{
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    main .mainInfo .hotelPhoto p{
+        margin-left: 0;
+    }
+
+    .mainInfo .btnS{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainInfo .btnS > button{
+        margin-bottom: 10px;
+    }
+
+    .mainInfo .payDocs{
+        display: flex;
+    }
+
+    .mainInfo .payDocs{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .mainInfo .payDocs li{
+        margin: 0;
+    }
+
+    .mainInfo .payDocs li a{
+        width: 144px;
+        padding-left: 30px;
+        padding-right: 40px;
+        margin: 0;
+        padding-bottom: 7px; 
+    }
+    .mainInfo .payDocs li a:hover{
+        border-bottom: 2px solid #000000;
+        color: #000000;
+    }
+
+    .mainInfo .orderBill .btnDivForMobile{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .orderBill .btnDivForMobile > button{
+        background:#fff;
+        border: none;
+        font-family: Roboto;
+    } 
+    
+    .orderBill .btnDivForMobile > button a{
+        text-decoration:none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #00AEEF;
+    }
+
+    .mainInfo .payBtns{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mainInfo .payBtns > button{
+        margin-bottom: 10px;
+    }
+
+    .mainInfo .payBtns p{
+        text-align: center;
+    }
+
+    .footerForMobile{
+        display: block;
+    }
+
+    .footerForMobile .footerLogo{
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .footerForMobile .ourLinks > p,
+    .footerForMobile p{
+        text-align: center;
+    }
+
+    .footerForMobile .ourLinks > p a{
+        text-decoration: none;
+        color: #333333;
+    }
+
+    .footerForMobile .ourLinks > p a .linkText{
+        border-bottom: 1px solid #9E9E9E;
+    }
+
+    .footerForMobile .ourLinks > p a .rightArrow{
+        padding-left: 10px;
+    }
+
+    .footerForMobile .paymentMethod{
+        text-align: center;
+        margin-left: 15px;
+        margin-top: 30px;
+    }
+
+    .footerForMobile .paymentMethod p{
+        margin-top: 10px;
+    }
+
+    .footerForMobile .paymentMethod span,
+    .footerForMobile .paymentMethod p{
+        color: #9E9E9E;
+    }
+
+    .footerForMobile .socialMedia ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 0;
+        margin: 30px 10px 10px 10px;
+    }
+    .footerForMobile .socialMedia ul li{
+        list-style: none;
+    }
+
+    .footerForMobile .phoneNumber a{
+        color: #00AEEF;
+        font-size: 20px;
+        line-height: 24px;
+        text-decoration: none;
+    }
+
+    .footerForMobile .phoneNumber{
+        margin-top: 50px;
+    }
+    
+    .footerForMobile .etc{
+        color: #9E9E9E;
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+
+    
+
+
+
+
+
+
+
